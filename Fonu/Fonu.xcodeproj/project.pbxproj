@@ -7,13 +7,13 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		320C3A8B23F67B81008D5668 /* Helper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 320C3A8A23F67B81008D5668 /* Helper.swift */; };
 		32B7D84A23F12EF700CE75D3 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32B7D84923F12EF700CE75D3 /* AppDelegate.swift */; };
 		32B7D84C23F12EF700CE75D3 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32B7D84B23F12EF700CE75D3 /* SceneDelegate.swift */; };
 		32B7D84E23F12EF700CE75D3 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32B7D84D23F12EF700CE75D3 /* ContentView.swift */; };
 		32B7D85023F12EF900CE75D3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 32B7D84F23F12EF900CE75D3 /* Assets.xcassets */; };
 		32B7D85323F12EF900CE75D3 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 32B7D85223F12EF900CE75D3 /* Preview Assets.xcassets */; };
 		32B7D85623F12EF900CE75D3 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 32B7D85423F12EF900CE75D3 /* LaunchScreen.storyboard */; };
-		32B7D86023F1314100CE75D3 /* Helper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32B7D85F23F1314100CE75D3 /* Helper.swift */; };
 		32B7D86223F1315200CE75D3 /* menu.json in Resources */ = {isa = PBXBuildFile; fileRef = 32B7D86123F1315200CE75D3 /* menu.json */; };
 		32B7D86423F1315A00CE75D3 /* Menu.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32B7D86323F1315A00CE75D3 /* Menu.swift */; };
 		32B7D86623F1316000CE75D3 /* Order.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32B7D86523F1316000CE75D3 /* Order.swift */; };
@@ -25,6 +25,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		320C3A8A23F67B81008D5668 /* Helper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Helper.swift; path = ../../../../../Desktop/Helper.swift; sourceTree = "<group>"; };
 		32B7D84623F12EF700CE75D3 /* Fonu.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Fonu.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		32B7D84923F12EF700CE75D3 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		32B7D84B23F12EF700CE75D3 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -33,7 +34,6 @@
 		32B7D85223F12EF900CE75D3 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		32B7D85523F12EF900CE75D3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		32B7D85723F12EF900CE75D3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		32B7D85F23F1314100CE75D3 /* Helper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Helper.swift; path = ../../../../../Downloads/idine/Helper.swift; sourceTree = "<group>"; };
 		32B7D86123F1315200CE75D3 /* menu.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = menu.json; sourceTree = "<group>"; };
 		32B7D86323F1315A00CE75D3 /* Menu.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Menu.swift; sourceTree = "<group>"; };
 		32B7D86523F1316000CE75D3 /* Order.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Order.swift; sourceTree = "<group>"; };
@@ -79,8 +79,8 @@
 				32B7D84D23F12EF700CE75D3 /* ContentView.swift */,
 				32B7D86123F1315200CE75D3 /* menu.json */,
 				32B7D86323F1315A00CE75D3 /* Menu.swift */,
+				320C3A8A23F67B81008D5668 /* Helper.swift */,
 				32B7D86523F1316000CE75D3 /* Order.swift */,
-				32B7D85F23F1314100CE75D3 /* Helper.swift */,
 				32B7D84F23F12EF900CE75D3 /* Assets.xcassets */,
 				32B7D85423F12EF900CE75D3 /* LaunchScreen.storyboard */,
 				32B7D85723F12EF900CE75D3 /* Info.plist */,
@@ -174,6 +174,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				320C3A8B23F67B81008D5668 /* Helper.swift in Sources */,
 				32B7D86623F1316000CE75D3 /* Order.swift in Sources */,
 				32B7D87223F14DC000CE75D3 /* CheckoutView.swift in Sources */,
 				32B7D84A23F12EF700CE75D3 /* AppDelegate.swift in Sources */,
@@ -182,7 +183,6 @@
 				32B7D84E23F12EF700CE75D3 /* ContentView.swift in Sources */,
 				32B7D86A23F1411D00CE75D3 /* ItemDetail.swift in Sources */,
 				32B7D86E23F1485500CE75D3 /* OrderView.swift in Sources */,
-				32B7D86023F1314100CE75D3 /* Helper.swift in Sources */,
 				32B7D87023F14C3B00CE75D3 /* AppView.swift in Sources */,
 				32B7D86423F1315A00CE75D3 /* Menu.swift in Sources */,
 			);

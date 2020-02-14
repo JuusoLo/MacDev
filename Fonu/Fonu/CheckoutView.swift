@@ -16,7 +16,15 @@ struct CheckoutView: View {
     @State private var paymentType = 0
     @State private var addLoyalityDetails = false
     @State private var loyalityNumber =  ""
-    @State private var timpAmount = 1
+    @State private var tipAmount = 1
+    @State private var showingPaymentAlert = false
+    
+    var totalPrice: Double {
+        let total = Double(order.total)
+        let tipValue = total / 100 *
+            Double(Self.tipAmounts[tipAmount])
+        return total + tipValue
+    }
     
     var body: some View {
         Form {
@@ -36,7 +44,7 @@ struct CheckoutView: View {
                 }
             }
             Section(header: Text("Add a tip?")){
-                Picker("Percentage:", selection: $timpAmount)
+                Picker("Percentage:", selection: $tipAmount)
                 {
                     ForEach(0 ..< Self.tipAmounts.count){
                         Text("\(Self.tipAmounts[$0])")
@@ -45,14 +53,19 @@ struct CheckoutView: View {
                 }.pickerStyle(SegmentedPickerStyle())
             }
             Section(header:
-                Text("Total: $100")
+                Text("Total: $\(totalPrice, specifier: "%.2f")")
+                    .font(.largeTitle)
             ){
                 Button("Confirm order"){
+                    self.showingPaymentAlert.toggle()
                     //place order
                 }
             }
         }
         .navigationBarTitle(Text("Payment"), displayMode: .inline)
+        .alert(isPresented: $showingPaymentAlert){
+            Alert(title: Text("Order confirmed"), message: Text("Your total was $\(totalPrice, specifier: "%.2f")- thank you!"), dismissButton: .default(Text ("OK")))
+        }
     }
 }
 
