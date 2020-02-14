@@ -15,6 +15,7 @@
 		320C3AA523F68E84008D5668 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 320C3AA423F68E84008D5668 /* Preview Assets.xcassets */; };
 		320C3AA823F68E84008D5668 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 320C3AA623F68E84008D5668 /* LaunchScreen.storyboard */; };
 		320C3AB323F68E85008D5668 /* ToDo_ListTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 320C3AB223F68E85008D5668 /* ToDo_ListTests.swift */; };
+		320C3ABE23F69064008D5668 /* ToDoItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 320C3ABD23F69064008D5668 /* ToDoItem.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,6 +41,7 @@
 		320C3AAE23F68E85008D5668 /* ToDo-ListTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "ToDo-ListTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		320C3AB223F68E85008D5668 /* ToDo_ListTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToDo_ListTests.swift; sourceTree = "<group>"; };
 		320C3AB423F68E85008D5668 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		320C3ABD23F69064008D5668 /* ToDoItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToDoItem.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -89,6 +91,7 @@
 				320C3AA923F68E84008D5668 /* Info.plist */,
 				320C3A9C23F68E81008D5668 /* ToDo_List.xcdatamodeld */,
 				320C3AA323F68E84008D5668 /* Preview Content */,
+				320C3ABD23F69064008D5668 /* ToDoItem.swift */,
 			);
 			path = "ToDo-List";
 			sourceTree = "<group>";
@@ -213,6 +216,7 @@
 			files = (
 				320C3A9923F68E81008D5668 /* AppDelegate.swift in Sources */,
 				320C3A9B23F68E81008D5668 /* SceneDelegate.swift in Sources */,
+				320C3ABE23F69064008D5668 /* ToDoItem.swift in Sources */,
 				320C3AA023F68E81008D5668 /* ContentView.swift in Sources */,
 				320C3A9E23F68E81008D5668 /* ToDo_List.xcdatamodeld in Sources */,
 			);
