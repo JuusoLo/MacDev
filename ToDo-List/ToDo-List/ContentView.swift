@@ -29,6 +29,17 @@ struct ContentView: View {
                     HStack{
                         TextField("New item", text: self.$newTodoItem)
                         Button(action:{
+                            let toDoItem = ToDoItem(context: self.managedObjectContext)
+                            toDoItem.title = self.newTodoItem
+                            toDoItem.createdAt = Date()
+                            
+                            do {
+                                try self.managedObjectContext.save()
+                            }catch{
+                                print(error)
+                            }
+                            
+                            self.newTodoItem = ""
                             
                         }){
                             Image(systemName: "plus.circle.fill")
@@ -37,11 +48,26 @@ struct ContentView: View {
                         }
                     }
                 }.font(.headline)
+                Section(header: Text("To Do's")){
+                    ForEach(self.toDoItems){todoItem in
+                        ToDoItemView(title: todoItem.title!, createdAt: "\(todoItem.createdAt!)")
+                    }.onDelete {indexSet in
+                        let deleteItem = self.toDoItems[indexSet.first!]
+                        self.managedObjectContext.delete(deleteItem)
+                        
+                        do {
+                            try self.managedObjectContext.save()
+                        }catch{
+                            print(error)
+                        }
+                    }
+                    
+                }
             }
+            .navigationBarTitle(Text("ToDo List"))
+            .navigationBarItems(trailing: EditButton())
+            
         }
-        .navigationBarTitle(Text("ToDo List"))
-        .navigationBarItems(trailing: EditButton())
-        
     }
 }
 
